@@ -1,0 +1,64 @@
+.calender {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  height: 500px;
+}
+
+#week_calender {
+  overflow: hidden;
+}
+
+.one_of_date {
+  border: 1px solid black;
+  float: left;
+  width: 180px;
+  height: 450px;
+}
+
+.calender_week {
+  height: 24px;
+  text-align: center;
+}
+
+.calender_date {
+  height: 24px;
+  text-align: center;
+}
+
+textarea {
+  width: 176px;
+  height: 390px;
+  border: none;
+  border-top: 1px solid black;
+  
+}
+
+#prev {
+  margin-top: 150px;
+  float: left;
+  text-align: center;
+  border: none;
+  font-size: 100px;
+  background: none;
+  height: 100px;
+  
+}
+
+#next {
+  margin-top: 150px;
+  float: right;
+  text-align: center;
+  border: none;
+  font-size: 100px;
+  background: none;
+  height: 100px;
+}
+
+.sunday{
+  background-color: red;
+}
+
+.saturday{
+  background-color: skyblue;
+}

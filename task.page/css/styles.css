@@ -1,0 +1,112 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+}
+
+header {
+  background-color: aqua;
+  margin: 0;
+  flex-grow: 0;
+  height: 50px;
+
+}
+
+h1 {
+  padding-left: 10px;
+  text-align: center;
+  margin: 0;
+}
+
+main {
+
+  margin: 0;
+  background: ghostwhite;
+  flex: 1;
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.task {
+  background-color: white;
+  
+  border-radius: 40px;
+  width: 600px;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+
+  overflow: hidden;
+
+}
+
+.task_head {
+  background: blue;
+  margin: 0;
+  width: 600px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.task_head > a {
+  display: block;
+  margin: 0;
+  font-size: 30px;
+  text-align: center;
+  color: ghostwhite;
+  padding-left: 100px;
+}
+
+ul {
+  list-style: none;
+  text-decoration: none;
+}
+
+ul > li > a {
+  color: ghostwhite;
+  
+}
+
+
+.task_main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.task_list {
+  display: flex;
+  border-bottom: 1px solid gray;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+  width: 400px;
+  height: 40px;
+}
+
+.task_list > a {
+  font-size: 20px;
+}
+
+
+
+
+footer {
+  background-color: cornflowerblue;
+  margin: 0;
+  height: 50px;
+
+}

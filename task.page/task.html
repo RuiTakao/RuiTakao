@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>tasks</title>
+</head>
+
+<body class="col">
+  <header>
+    <h1>Dai4sha Self-management Tool</h1>
+  </header>
+  <main>
+    <div class="task  shadow">
+      <div class="task_head row">
+        <a class="col-10" href="{{ url('/') }}">2020/6/9 Mon</a>
+        <ul class="col-2">
+          <li><a href="{{ url('/create') }}">Create</a></li>
+          <li><a href="{{ url('/edit') }}">Edit</a></li>
+        </ul>
+      </div>
+      <div class="task_main">
+        <!-- @forelse ($posts as $post) -->
+        <div class="task_list table">
+          <a href="{{ action('PostsController@show', $post) }}">
+            <!-- {{ $post->title }} -->
+            勉強
+          </a>
+          <a href="{{ action('PostsController@show', $post) }}">
+            <!-- {{ $post->title }} -->
+            9:00~12:00
+          </a>
+        </div>
+        <!-- @empty
+        <a>No posta yet</a>
+        @endforelse -->
+      </div>
+    </div>
+  </main>
+  <footer>
+    <h1>Dai4sha.Co.Ltd</h1>
+  </footer>
+  
+
+</body>
+
+</html>
