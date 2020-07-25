@@ -4,18 +4,23 @@ html {
 
 body {
   margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 100%;
-
 }
 
 header {
   background-color: aqua;
   margin: 0;
-  flex-grow: 0;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
   height: 50px;
-
 }
 
 h1 {
@@ -25,29 +30,36 @@ h1 {
 }
 
 main {
-
   margin: 0;
   background: ghostwhite;
-  flex: 1;
-
-
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .task {
   background-color: white;
-  
-  border-radius: 40px;
+  border: 1px solid black;
+  border-radius: 30px;
   width: 600px;
   height: 550px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   overflow: hidden;
-
 }
 
 .task_head {
@@ -55,58 +67,62 @@ main {
   margin: 0;
   width: 600px;
   height: 50px;
-  display: flex;
-  justify-content: center;
 }
 
-.task_head > a {
+.task_head a {
   display: block;
   margin: 0;
   font-size: 30px;
   text-align: center;
-  color: ghostwhite;
-  padding-left: 100px;
 }
-
-ul {
-  list-style: none;
-  text-decoration: none;
-}
-
-ul > li > a {
-  color: ghostwhite;
-  
-}
-
 
 .task_main {
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .task_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   border-bottom: 1px solid gray;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 30px;
   width: 400px;
   height: 40px;
 }
 
-.task_list > a {
+.task_list a {
   font-size: 20px;
 }
-
-
-
 
 footer {
   background-color: cornflowerblue;
   margin: 0;
   height: 50px;
-
 }
+
+select option {
+  color: #4f4f4f;
+}
+
+select option:first-child {
+  display: none;
+}
+/*# sourceMappingURL=styles.css.map */

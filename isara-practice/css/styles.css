@@ -1,0 +1,212 @@
+@charset "UTF-8";
+.back-img {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.box-layout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.info {
+  background-color: #DB6B64;
+  border-radius: 50px;
+}
+
+.info p {
+  text-align: center;
+  color: #fff;
+}
+
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "�q���M�m�p�S Pro W3", "Hiragino Kaku Gothic Pro", ���C���I, Meiryo, Osaka, "�l�r �o�S�V�b�N", "MS PGothic", sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 74px;
+  width: 100%;
+  background-color: #fff;
+}
+
+header .header-in {
+  margin: 0 120px 0 120px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header-in .header-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 44.64px;
+}
+
+header .header-in .header-logo img {
+  width: 128px;
+  padding: 0;
+  margin: 0;
+}
+
+header .header-in .header-logo p {
+  margin-bottom: 0;
+}
+
+header .header-in .info {
+  width: 315px;
+  height: 45px;
+}
+
+header .header-in .info p {
+  font-size: 14px;
+}
+
+.toptop {
+  padding-top: 74px;
+}
+
+.toptop p {
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.toptop .main {
+  height: 500px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url("main.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.toptop .main .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.toptop .main .title h1 {
+  font-size: 28px;
+  text-align: center;
+  margin: 0 0 15px 0;
+}
+
+.toptop .main .title h2 {
+  font-size: 20px;
+  text-align: center;
+}
+
+.toptop .main .title img {
+  width: 317px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.toptop .section-info {
+  background-color: #EBB94D;
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.toptop .section-info .doc {
+  padding-top: 40px;
+}
+
+.toptop .section-info .doc p {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.toptop .section-info .info {
+  height: 105px;
+  line-height: 105px;
+  width: 1027px;
+  margin-bottom: 25px;
+  margin-top: 47px;
+}
+
+.toptop .section-info .info p {
+  font-size: 28px;
+}
+
+.toptop .section-info .plan p {
+  margin: 40px;
+}
+
+.documentation {
+  margin-top: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.documentation p {
+  padding-left: 2px;
+  text-align: center;
+  color: #C7264E;
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-size: 18px !important;
+}
+
+.introduction {
+  height: 588px;
+  width: 100%;
+  background-image: url("introbottom.jpg");
+}
+/*# sourceMappingURL=styles.css.map */
