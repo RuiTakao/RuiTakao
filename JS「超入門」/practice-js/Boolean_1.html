@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boolean_1</title>
+</head>
+
+<body>
+  <section>
+    <p id="choice"></p>
+  </section>
+  <script>
+    'use strict';
+
+    const choice = document.getElementById('choice');
+
+    if (window.confirm('ゲームスタート！準備はいい？')) {
+    // if (true) {
+      choice.textContent = 'ゲームを開始します。';
+      console.log('ゲームを開始します。');
+    } else {
+      choice.textContent = 'ゲームを終了します。';
+      console.log('ゲームを終了します。');
+    };
+
+
+  </script>
+</body>
+
+</html>

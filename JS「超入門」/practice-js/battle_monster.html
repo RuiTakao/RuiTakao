@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <section>
+    <ul id="root"></ul>
+  </section>
+  <script>
+    'use strict';
+    window.alert('戦闘スタート');
+    const root = document.getElementById('root');
+
+    let i = 100;
+    let count = 0;
+    while (i > 0) {
+      const attack = Math.floor(Math.random() * 30) + 1;
+      const li = document.createElement('li');
+      root.appendChild(li);
+      li.textContent = `モンスターに${attack}ダメージ`;
+      console.log(`モンスターに${attack}ダメージ`);
+      i -= attack;
+      count++;
+
+    }
+
+    const li = document.createElement('li');
+    root.appendChild(li);
+    li.textContent = `${count}回でモンスターを倒した！`;
+    console.log(`${count}回でモンスターを倒した！`);
+
+
+  </script>
+</body>
+
+</html>

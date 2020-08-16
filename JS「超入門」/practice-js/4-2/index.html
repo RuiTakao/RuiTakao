@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <section>
+    <p>最終アクセス日時<span id="time"></span></p>
+  </section>
+  <script>
+    'use strict';
+
+    const now = new Date();
+    const year = now.getFullYear();
+    const month = now.getMonth()+1;
+    const date = now.getDate();
+    const hours = now.getHours();
+    const minutes = now.getMinutes();
+    let timeIcon;
+    if(hours > 12){
+      
+      timeIcon = 'p.m.';
+    }else if(hours < 12){
+      timeIcon = 'a.m.';
+    }
+
+    const output = document.getElementById('time');
+    output.textContent = `${year}/${month}/${date}/${hours % 12}:${minutes}${timeIcon}`;
+    // hours % 12 24間表記の時間を12で割った余を計算している。
+    
+  </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>prompt&if_lesson</title>
+</head>
+
+<body>
+  <section></section>
+  <script>
+    'use strict';
+    
+    let answer = window.prompt('ヘルプを見ますか？');
+
+    if(answer === 'yes' ){
+      window.alert('頭突き');
+    } else if (answer === 'no'){
+      window.alert('ゲームを開始します');
+    }else{
+      window.alert('yesかnoでお答えください');
+    }
+  </script>
+</body>
+
+</html>

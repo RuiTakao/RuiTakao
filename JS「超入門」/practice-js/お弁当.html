@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>お弁当</title>
+</head>
+<body>
+  <script>
+    const now = new Date();
+    const hours = now.getHours();
+    let message;
+
+    if(hours >= 19 && hours < 21){
+      message = 'お弁当30%OFF！';
+    }else if(hours === 9 || hours === 15){
+      message = 'お弁当1個買ったら1個おまけ!';
+    }else{
+      message = 'お弁当はいかがですか？';
+    }
+    
+    window.alert(message);
+  </script>
+</body>
+</html>

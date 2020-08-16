@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <section>
+    <ul id="root"></ul>
+  </section>
+  <script>
+    'use strict';
+    const root = document.getElementById('root');
+
+    let i = 1;
+    while(i <= 10){
+      const li = document.createElement('li');
+      li.textContent = `${i} 枚`;
+      root.appendChild(li);
+      i++;
+    }
+
+
+
+  </script>
+</body>
+</html>

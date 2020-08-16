@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <section>
+    <p id="choice">ここに日付を表示します</p>
+  </section>
+  <script>
+    'use strict';
+    window.alert('アプリ連携が完了しました');
+    // インプット → アウトプット
+    window.alert(19+18);
+    // インプット → 加工 → アウトプット
+    document.getElementById('choice').textContent = new Date();
+    console.log(document.getElementById('choice').textContent);
+  </script>
+</body>
+</html>

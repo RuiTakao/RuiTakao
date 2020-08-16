@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=750px, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="home/home.css">
+</head>
+
+<body>
+  <div class="login-modal-wrapper" id="login-modal">
+    <div class="modal">
+      <div id="login-form">
+        <form action="#">
+          <input class="form-control" type="text" placeholder="User Name">
+          <input class="form-control" type="password" placeholder="Password">
+          <div id="submit-login-btn">Login</div>
+        </form>
+        <div id="register-modal-btn">Not registered? Create an account</div>
+      </div>
+    </div>
+  </div>
+  <div class="register-modal-wrapper" id="register-modal">
+    <div class="modal">
+      <div id="register-form">
+        <form action="#">
+          <input class="form-control" type="text" placeholder="User Name">
+          <input class="form-control" type="email" placeholder="mail address">
+          <input class="form-control" type="password" placeholder="Password">
+          <div id="submit-register-btn">create account</div>
+        </form>
+        <div id="login-modal-btn">Already registered? Sign In</div>
+      </div>
+    </div>
+  </div>
+
+  <section>
+
+    <h1 id="taskApp">-TaskApp-</h1>
+
+    <div class="btn-space">
+      <div id="loginBtn">Let's Task!!!</div>
+
+    </div>
+  </section>
+
+  <!-- login modal -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/home.js"></script>
+</body>
+
+</html>

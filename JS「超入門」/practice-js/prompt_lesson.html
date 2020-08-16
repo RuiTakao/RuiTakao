@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>prompt_lesson</title>
+</head>
+
+<body>
+  <section>
+    <p id="text"></p>
+  </section>
+  <script>
+    'use strict';
+    let answer = window.prompt('ヘルプをみますか？');
+    // window.prompt('ヘルプをみますか？');
+
+
+    document.getElementById('text').textContent = answer;
+    console.log(answer);
+    
+
+  </script>
+</body>
+
+</html>
